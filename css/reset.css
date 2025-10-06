@@ -1,0 +1,140 @@
+/* Reset baseado no "Reset Andy Bell" (versão inspirada)
+   - Box-sizing universal
+   - Remoção de margins padrão
+   - Correções para elementos HTML5
+   - Imagens e media responsivos
+   - Inputs e botões consistentes
+   - Tamanho base e remoção de outline visual (preserve acessibilidade com focus-visible)
+*/
+
+/* Box sizing padrão moderno */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Reset de espaçamentos */
+:where(html, body, div, main, header, nav, section, article, aside, footer, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd) {
+  margin: 0;
+  padding: 0;
+}
+
+/* Configurações base do html/body */
+html {
+  -webkit-text-size-adjust: 100%; /* evitar zoom em iOS */
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Remover listas padrões */
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* Links */
+a {
+  background-color: transparent;
+  text-decoration-skip-ink: auto;
+}
+
+/* Imagens e media responsivos */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tornar formulários e elementos interativos consistentes */
+input, button, textarea, select {
+  font: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remover aparência por padrão em botões */
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Fieldset e legend */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Melhor gerenciamento de quebras de palavras */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Visibilidade de foco — manter acessibilidade com :focus-visible */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+/* Remover sombras padrão em elementos focados (ex: Chrome) */
+:-webkit-focus-ring-color {
+  outline: none;
+}
+
+/* Forçar que inputs number não exibam setas em alguns browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remover background em elements de search no Safari */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* Placeholder */
+::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+/* Visibilidade de elementos ocultos */
+[hidden] {
+  display: none !important;
+}
+
+/* Small utility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
