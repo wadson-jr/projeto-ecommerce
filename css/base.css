@@ -1,4 +1,6 @@
 /* base.css */
 body {
-    font-family: var(--fonte-principal);
+  font-family: var(--fonte-principal);
+  color: #333333;
+  background-color: aqua; /* Cor de fundo temporária para visualização */
 }

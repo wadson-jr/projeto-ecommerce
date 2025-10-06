@@ -8,12 +8,40 @@
 */
 
 /* Box sizing padrão moderno */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* Reset de espaçamentos */
-:where(html, body, div, main, header, nav, section, article, aside, footer, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd) {
+:where(
+    html,
+    body,
+    div,
+    main,
+    header,
+    nav,
+    section,
+    article,
+    aside,
+    footer,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd
+  ) {
   margin: 0;
   padding: 0;
 }
@@ -37,25 +65,33 @@ body {
 }
 
 /* Remover listas padrões */
-ul[class], ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
 /* Links */
 a {
   background-color: transparent;
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Imagens e media responsivos */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* Tornar formulários e elementos interativos consistentes */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
   -webkit-appearance: none;
   appearance: none;
@@ -82,7 +118,13 @@ table {
 }
 
 /* Melhor gerenciamento de quebras de palavras */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 

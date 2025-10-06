@@ -3,22 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SyntaxWear - Ecommerce</title>
+    <title>SyntaxWear - Tênis e Snearkers Online</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/layout.css" />
+
+    <link rel="stylesheet" href="/css/components/header.css" />
   </head>
   <body>
     <!-- Header: logo e navegação -->
-    <header class="site-header">
-      <div class="logo">
-        <img src="" alt="">
-      </div>
-      
-      <nav class="main-nav">
+    <header class="header">
+      <h1 class="logo">
+        <a href="/" title="SyntaxWear - Tênis e Snearkers Online">
+          <img
+            src="./images/logo/Logo.svg"
+            alt="SyntaxWear - Tênis e Snearkers Online"
+          />
+        </a>
+      </h1>
+
+      <nav class="nav-center" aria-label="categorias principais">
         <ul class="nav-list">
-          <!-- itens de navegação aqui -->
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menu à direita com links e ícones -->
+      <nav class="nav-right" aria-label="Ações do usuário">
+        <ul class="nav-actions">
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a href="#" class="icon-account" aria-label="Minha conta">
+              <img src="./images/icons/icon-account.svg" alt="Minha Conta" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-help" aria-label="Ajuda">
+              <img src="./images/icons/icon-help.svg" alt="Ajuda" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-cart" aria-label="Carrinho">
+              <img src="./images/icons/icon-cart.svg" alt="Carrinho" />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -35,7 +67,7 @@
     </main>
 
     <!-- Footer com informações de contato e links -->
-    <footer class="site-footer">
+    <footer class="footer">
       <div class="footer-contacts">
         <!-- informações de contato -->
       </div>
