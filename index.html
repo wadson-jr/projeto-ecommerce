@@ -3,55 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SyntaxWear - Tênis e Snearkers Online</title>
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/variables.css" />
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/layout.css" />
+    <title>SyntaxWear - Tênis e Sneakers Online</title>
 
-    <link rel="stylesheet" href="/css/components/header.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/hero.css" />
   </head>
   <body>
-    <!-- Header: logo e navegação -->
     <header class="header">
+      <!-- Logo e navegação -->
       <h1 class="logo">
-        <a href="/" title="SyntaxWear - Tênis e Snearkers Online">
+        <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
           <img
-            src="./images/logo/Logo.svg"
-            alt="SyntaxWear - Tênis e Snearkers Online"
+            src="./images/logo/logo.svg"
+            alt="SyntaxWear - Tênis e Sneakers Online"
           />
         </a>
       </h1>
 
-      <nav class="nav-center" aria-label="categorias principais">
-        <ul class="nav-list">
+      <nav class="nav-center" aria-label="Categorias Principais">
+        <ul>
           <li><a href="#">Masculino</a></li>
           <li><a href="#">Feminino</a></li>
           <li><a href="#">Outlet</a></li>
         </ul>
       </nav>
 
-      <!-- Menu à direita com links e ícones -->
-      <nav class="nav-right" aria-label="Ações do usuário">
-        <ul class="nav-actions">
+      <nav class="nav-right" aria-label="Acesso rápido">
+        <ul>
           <li><a href="#">Nossas lojas</a></li>
-
           <li><a href="#">Sobre</a></li>
-
           <li>
-            <a href="#" class="icon-account" aria-label="Minha conta">
-              <img src="./images/icons/icon-account.svg" alt="Minha Conta" />
+            <a href="#" aria-label="Minha conta">
+              <img src="./images/icons/icon-account.svg" alt="Minha conta" />
             </a>
           </li>
-
           <li>
-            <a href="#" class="icon-help" aria-label="Ajuda">
+            <a href="#" aria-label="Ajuda">
               <img src="./images/icons/icon-help.svg" alt="Ajuda" />
             </a>
           </li>
-
           <li>
-            <a href="#" class="icon-cart" aria-label="Carrinho">
+            <a href="#" aria-label="Carrinho">
               <img src="./images/icons/icon-cart.svg" alt="Carrinho" />
             </a>
           </li>
@@ -60,24 +57,31 @@
     </header>
 
     <main>
-      <!-- Seção Hero principal -->
-      <section class="main" id="main"></section>
+      <section class="hero-section">
+        <!-- Seção hero -->
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <span class="hero-subtitle">Krypton One</span>
+            <h2 class="hero-title">Transforme qualquer passo em presença.</h2>
+            <div class="hero-buttons">
+              <a class="btn btn-outline" href="#">Ver modelos</a>
+              <a class="btn btn-filled" href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- Seção de categorias de tênis -->
-      <section class="categories"></section>
+      <section class="categories-section">
+        <!-- Seção de categorias de tênis -->
+      </section>
 
-      <!-- Grid de produtos em destaque -->
-      <section class="featured-products" id="featured-products"></section>
+      <section class="featured-products-section">
+        <!-- Grid com produtos em destaque -->
+      </section>
     </main>
 
-    <!-- Footer com informações de contato e links -->
-    <footer class="footer">
-      <div class="footer-contacts">
-        <!-- informações de contato -->
-      </div>
-      <div class="footer-links">
-        <!-- links úteis -->
-      </div>
+    <footer class="site-footer">
+      <!-- Informações de contato e links -->
     </footer>
   </body>
 </html>

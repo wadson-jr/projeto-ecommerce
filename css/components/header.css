@@ -1,6 +1,5 @@
 /* header.css */
 .header {
-  background-color: #ffffff;
   position: fixed;
   top: 20px;
   left: 50%;
@@ -11,34 +10,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
+  padding: 0.265rem 1.25rem;
+  background-color: #ffffff;
 }
 
 .logo img {
   height: 48px;
 }
 
-.nav-center ul,
-.nav-right ul {
+.nav-center ul {
   display: flex;
   gap: 2.5rem;
-  align-content: center;
 }
 
 .nav-center a,
 .nav-right a {
   font-size: 1.25rem;
-  color: inherit;
+  color: #333333;
 }
 
 .nav-center a:hover,
 .nav-right a:hover {
-  font-size: 1.25rem;
   color: #7c3aed;
+}
+.nav-right ul {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .nav-right img {
-  height: 24px;
+  height: 20px;
 }
 
 .nav-right a:hover img {
