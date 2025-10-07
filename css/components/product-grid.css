@@ -1,31 +1,45 @@
 /* product-grid.css */
+.card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+}
+
 .highlight {
-  grid-area: highlight;
-  background-color: aliceblue;
+  grid-area: hlight;
+  background-image: url(../../images/banners/hero.jpg);
+  background-color: purple;
 }
 
 .sneaker-purple {
   grid-area: sneakerP;
-  background-color: red;
+  background-image: url(../../images/products-grid/purple-grid.png);
+  background-color: purple;
 }
 
 .model {
   grid-area: model;
-  background-color: blue;
+  background-image: url(../../images/products-grid/model-grid.png);
+  background-color: purple;
 }
 
 .sneaker-color {
   grid-area: sneakerC;
-  background-color: green;
+  background-image: url(../../images/products-grid/color-grid.png);
+  background-color: purple;
 }
 
 .sneaker-white {
   grid-area: sneakerW;
-  background-color: yellow;
+  background-image: url(../../images/products-grid/white-grid.png);
+  background-color: purple;
 }
 
 .sneaker-silver {
   grid-area: sneakerS;
+  background-image: url(../../images/products-grid/silver-grid.png);
   background-color: purple;
 }
 
@@ -35,9 +49,35 @@
   grid-template-rows: repeat(3, 300px);
 
   grid-template-areas:
-    "highlight highlight sneakerP sneakerP"
-    "highlight gihhlight model sneakerC"
+    "hlight hlight sneakerP sneakerP"
+    "hlight hlight model sneakerC"
     "sneakerW sneakerW model sneakerS";
-
   gap: 30px;
+}
+
+.top1-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-title {
+  color: #ededed;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.card-subtitle{
+    color: #ededed;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cta-group{
+    display: flex;
+    gap: 10px;
 }
