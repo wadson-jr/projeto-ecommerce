@@ -1,10 +1,11 @@
 /* header.css */
 .header {
   position: fixed;
-  top: 20px;
+  top: 60px;
   left: 50%;
   transform: translate(-50%);
-  width: calc(100% - 40px);
+  width: calc(100% - 210px);
+  max-width: 1320px;
   border-radius: 15px;
   z-index: 999;
   display: flex;

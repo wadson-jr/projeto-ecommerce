@@ -1,1 +1,43 @@
 /* product-grid.css */
+.highlight {
+  grid-area: highlight;
+  background-color: aliceblue;
+}
+
+.sneaker-purple {
+  grid-area: sneakerP;
+  background-color: red;
+}
+
+.model {
+  grid-area: model;
+  background-color: blue;
+}
+
+.sneaker-color {
+  grid-area: sneakerC;
+  background-color: green;
+}
+
+.sneaker-white {
+  grid-area: sneakerW;
+  background-color: yellow;
+}
+
+.sneaker-silver {
+  grid-area: sneakerS;
+  background-color: purple;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+
+  grid-template-areas:
+    "highlight highlight sneakerP sneakerP"
+    "highlight gihhlight model sneakerC"
+    "sneakerW sneakerW model sneakerS";
+
+  gap: 30px;
+}
