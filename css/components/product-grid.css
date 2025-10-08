@@ -1,4 +1,3 @@
-/* product-grid.css */
 .card {
   background-position: center;
   background-size: cover;
@@ -9,38 +8,32 @@
 
 .highlight {
   grid-area: hlight;
-  background-image: url(../../images/banners/hero.jpg);
-  background-color: purple;
+  background-image: url(../../images/products-grid/hero-grid.png);
 }
 
 .sneaker-purple {
   grid-area: sneakerP;
   background-image: url(../../images/products-grid/purple-grid.png);
-  background-color: purple;
 }
 
 .model {
   grid-area: model;
   background-image: url(../../images/products-grid/model-grid.png);
-  background-color: purple;
 }
 
 .sneaker-color {
   grid-area: sneakerC;
   background-image: url(../../images/products-grid/color-grid.png);
-  background-color: purple;
 }
 
 .sneaker-white {
   grid-area: sneakerW;
   background-image: url(../../images/products-grid/white-grid.png);
-  background-color: purple;
 }
 
 .sneaker-silver {
   grid-area: sneakerS;
   background-image: url(../../images/products-grid/silver-grid.png);
-  background-color: purple;
 }
 
 .grid-section {
@@ -70,14 +63,14 @@
   margin-bottom: 10px;
 }
 
-.card-subtitle{
-    color: #ededed;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
+.card-subtitle {
+  color: #ededed;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.cta-group{
-    display: flex;
-    gap: 10px;
+.cta-group {
+  display: flex;
+  gap: 10px;
 }

@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="./css/components/header.css" />
     <link rel="stylesheet" href="./css/components/hero.css" />
     <link rel="stylesheet" href="./css/components/product-category.css" />
-    <link rel="stylesheet" href="./css/components//product-grid.css" />
+    <link rel="stylesheet" href="./css/components/product-grid.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
   </head>
+
   <body>
     <header class="header">
       <!-- Logo e navegação -->
@@ -123,8 +125,95 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <!-- Informações de contato e links -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Newsletter e redes -->
+        <section class="footer-left">
+          <form class="newsletter-form">
+            <label for="input-email" class="email-label"
+              >Inscreva-se em nosso e-mail</label
+            >
+            <input
+              id="input-email"
+              type="email"
+              placeholder="email@email.com"
+            />
+          </form>
+
+          <div class="footer-social" aria-label="Redes sociais">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li>
+                <a href="#" aria-label="Instagram">
+                  <img
+                    src="./images/icons/icon-instagram.svg"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" aria-label="WhatsApp">
+                  <img src="./images/icons/icon-whatsapp.svg" alt="WhatsApp" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" aria-label="TikTok">
+                  <img src="./images/icons/icon-tiktok.svg" alt="TikTok" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" aria-label="Facebook">
+                  <img src="./images/icons/icon-facebook.svg" alt="Facebook" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Colunas de navegação -->
+        <nav class="footer-nav" aria-label="Links do rodapé">
+          <ul>
+            <h3 class="foot-title">Masculino</h3>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+
+          <ul>
+            <h3 class="foot-title">Feminino</h3>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+
+          <ul>
+            <h3 class="foot-title">Outlet</h3>
+            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Feminino</a></li>
+          </ul>
+
+          <ul>
+            <h3 class="foot-title">Nossas lojas</h3>
+            <li><a href="#">Loja física</a></li>
+            <li><a href="#">Loja online</a></li>
+          </ul>
+
+          <ul>
+            <h3 class="foot-title">Sobre</h3>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Missão</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">Copyright. All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>
