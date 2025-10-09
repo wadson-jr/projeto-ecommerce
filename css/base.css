@@ -7,7 +7,7 @@ body {
 main {
   padding: 2.5rem 0 0;
   max-width: 1360px;
-  margin: 0 auto  ;
+  margin: 0 auto;
 }
 
 .btn {
@@ -36,4 +36,10 @@ main {
   background-color: #6329a2;
   color: #ffffff;
   border-color: #6329a2;
+}
+
+@media (max-width: 1305px) {
+  .main {
+    padding: 0.625rem;
+  }
 }

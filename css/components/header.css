@@ -50,10 +50,10 @@
 
 .nav-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 75%;
   align-items: center;
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 .menu-toggle {
@@ -94,6 +94,7 @@ margin-right: 20px;
     width: 200px;
     flex-direction: column;
     padding: 80px 20px 20px;
+    margin-right: 0;
     background-color: #ffffff;
     gap: 2rem;
     transition: right 0.3s ease;

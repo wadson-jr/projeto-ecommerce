@@ -41,3 +41,25 @@
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    height: 660px;
+  }
+
+  .hero-overlay {
+    padding: 0;
+  }
+
+  .hero-content .hero-title .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
